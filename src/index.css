@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: #aaa;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #646cff;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-connect {
+  background: #646cff;
+  color: #fff;
+}
+
+.btn-disconnect {
+  background: #ff4444;
+  color: #fff;
+}
+
+.btn-register {
+  background: #44aa44;
+  color: #fff;
+}
+
+.btn-call {
+  background: #44aa44;
+  color: #fff;
+}
+
+.btn-hangup {
+  background: #ff4444;
+  color: #fff;
+}
+
+.btn-answer {
+  background: #44aaff;
+  color: #fff;
+}
+
+.status {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+.status-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+.status-value {
+  color: #aaa;
+}
+
+.status-value.connected {
+  color: #44aa44;
+}
+
+.status-value.disconnected {
+  color: #ff4444;
+}
+
+.logs {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #0a0a0a;
+  border-radius: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: monospace;
+  font-size: 0.75rem;
+}
+
+.log-entry {
+  padding: 0.125rem 0;
+  color: #888;
+}
+
+.log-entry.info {
+  color: #44aaff;
+}
+
+.log-entry.error {
+  color: #ff4444;
+}
+
+.log-entry.success {
+  color: #44aa44;
+}
